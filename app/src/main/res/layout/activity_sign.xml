@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SignActivity"
+    android:background="@color/background1"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnPickDocx"
+        android:background="@drawable/custom_button_green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:text="choose docx file" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="none"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_border_textview_2"
+        android:textSize="20dp"
+        android:id="@+id/textDocxFile"/>
+
+    <Button
+        android:id="@+id/btnPickPrivateKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_button_green"
+        android:text="choose private key" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="none"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:background="@drawable/custom_border_textview_2"
+        android:id="@+id/textPrivateKey"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Signature"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_button_red"
+        android:id="@+id/btnSignature"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_border_textview_2"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Signature file name.."
+        android:id="@+id/edtSignatureFileName"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_border_textview_2"
+        android:text="none"
+        android:textSize="20dp"
+        android:id="@+id/textSign"/>
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/pgBarSign"/>
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/optionTestEcOperation"
+        android:title="TestEcOperation"/>
+<!--    <item-->
+<!--        android:id="@+id/optionAuthen"-->
+<!--        android:title="Authentication"/>-->
+<!--    <item-->
+<!--        android:id="@+id/optionPickFile"-->
+<!--        android:title="Pick File"/>-->
+<!--    <item-->
+<!--        android:id="@+id/optionCreateKeyPair"-->
+<!--        android:title="Create KeyPair"/>-->
+</menu>

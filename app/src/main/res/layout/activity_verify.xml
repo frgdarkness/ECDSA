@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.VerifyActivity"
+    android:background="@color/background1"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnPickDocx"
+        android:background="@drawable/custom_button_green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:text="choose docx file" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="none"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_border_textview_2"
+        android:textSize="20dp"
+        android:id="@+id/textDocxFile"/>
+
+    <Button
+        android:id="@+id/btnPickPublicKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_button_green"
+        android:text="choose public key" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="none"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:background="@drawable/custom_border_textview_2"
+        android:id="@+id/textPublicKey"/>
+
+    <Button
+        android:id="@+id/btnPickSignatureFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_button_green"
+        android:text="choose signature file" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="none"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:background="@drawable/custom_border_textview_2"
+        android:id="@+id/textSignatureFile"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_button_red"
+        android:id="@+id/btnVerify"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imgResult"
+            android:padding="20dp" />
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:id="@+id/pgBarCircle"/>
+    </FrameLayout>
+
+
+</LinearLayout>
